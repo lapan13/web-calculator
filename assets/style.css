@@ -8,9 +8,8 @@ body {
 
 .flex-container-column {
     display: flex;
-    flex-direction: column;
-
     /* properti pendukung */
+    flex-direction: column;
     max-width: 800px;
     margin: 0 auto;
     text-align: right;
@@ -22,7 +21,6 @@ body {
 
 .button {
     flex-basis: 25%;
-
     /* properti pendukung */
     font-size: 1.5em;
     text-align: center;
@@ -30,10 +28,6 @@ body {
     border: 1px solid black;
     background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
     cursor: pointer;
-}
-
-.button:hover {
-    font-weight: bold;
 }
 
 .double {
@@ -62,8 +56,44 @@ body {
     margin-top: 20px;
 }
 
+.button:hover {
+    font-weight: bold;
+}
+
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background-color: orange;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
 @media screen and (max-width: 513px) {
     .button {
         padding: 10px;
+    }
+
+    .history {
+        width: 100%;
     }
 }
